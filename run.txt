@@ -1,0 +1,1 @@
+ Start-Process 'powershell.exe' -RedirectStandardInput "Phase 1\code\GetData.bat"
