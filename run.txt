@@ -1,3 +1,4 @@
  Start-Process 'powershell.exe' -RedirectStandardInput "Phase 1\code\GetOsDatas.bat"
  Start-Process 'powershell.exe' -RedirectStandardInput "Phase 1\code\GetUserDatas.bat"
  Start-Process 'powershell.exe' -RedirectStandardInput "Phase 1\code\GetSecurityDatas.bat"
+ Start-Process 'powershell.exe' -RedirectStandardInput "Phase 1\code\GetHardwareDatas.bat"
