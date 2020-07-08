@@ -1,4 +1,4 @@
- Start-Process 'powershell.exe' -RedirectStandardInput "Phase 1\code\GetOsDatas.bat"
- Start-Process 'powershell.exe' -RedirectStandardInput "Phase 1\code\GetUserDatas.bat"
- Start-Process 'powershell.exe' -RedirectStandardInput "Phase 1\code\GetSecurityDatas.bat"
- Start-Process 'powershell.exe' -RedirectStandardInput "Phase 1\code\GetHardwareDatas.bat"
+ Start-Process 'powershell.exe' -RedirectStandardInput "Modules\GetOsDatas.bat"  -WindowStyle Hidden
+ Start-Process 'powershell.exe' -RedirectStandardInput "Modules\GetUserDatas.bat"  -WindowStyle Hidden
+ Start-Process 'powershell.exe' -RedirectStandardInput "Modules\GetSecurityDatas.bat"  -WindowStyle Hidden
+ Start-Process 'powershell.exe' -RedirectStandardInput "Modules\GetHardwareDatas.bat"  -WindowStyle Hidden
