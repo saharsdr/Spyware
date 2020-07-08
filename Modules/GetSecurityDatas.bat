@@ -6,7 +6,7 @@ $fireWall = Get-NetFirewallProfile
 "------firewall: " | Add-Content  'datas\SecurityInfo.txt'
 $fireWall | Add-Content  'datas\SecurityInfo.txt'
 
-$PasswordLastSet = Get-localUser -Name R.A.Avenger  | select PasswordLastSet
+$PasswordLastSet = Get-localUser| select name,PasswordLastSet
 "------Password Last Set: " | Add-Content  'datas\SecurityInfo.txt'
 $PasswordLastSet | Add-Content  'datas\SecurityInfo.txt'
 
