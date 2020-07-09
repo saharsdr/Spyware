@@ -1,4 +1,7 @@
-$address ='datas\ardwareInfo.txt'
+$ipV4 = Test-Connection -ComputerName (hostname) -Count 1  | Select -ExpandProperty IPV4Address 
+$ip=$ipV4.IPAddressToString
+$address ='\\192.168.150.1\share\datas\'+$ip+'HardwareInfo.txt'
+
 
 $motherBoard = Get-WmiObject win32_baseboard
 "------Motherboard name: " + $motherBoard.name | out-file $address
