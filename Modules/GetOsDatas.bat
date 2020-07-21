@@ -1,6 +1,6 @@
 $ipV4 = Test-Connection -ComputerName (hostname) -Count 1  | Select -ExpandProperty IPV4Address 
 $ip=$ipV4.IPAddressToString
-$address ='\\192.168.150.1\share\datas\'+$ip+'OsInfo.txt'
+$address ='datas\'+$ip+'OsInfo.txt'
 
 $osInfo = Get-ComputerInfo -property OsType, OsVersion, OsName, OsLocalDateTime
 "------OS Type: " + $osInfo.OsType | out-file $address 

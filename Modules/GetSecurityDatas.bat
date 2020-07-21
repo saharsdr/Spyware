@@ -1,6 +1,6 @@
 $ipV4 = Test-Connection -ComputerName (hostname) -Count 1  | Select -ExpandProperty IPV4Address 
 $ip=$ipV4.IPAddressToString
-$address ='\\192.168.150.1\share\datas\'+$ip+'SecurityInfo.txt'
+$address ='datas\'+$ip+'SecurityInfo.txt'
 
 $antivirous = Get-CimInstance -Namespace root/SecurityCenter2 -ClassName AntivirusProduct 
 "------antivirous: " | out-file $address 

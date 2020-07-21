@@ -1,6 +1,6 @@
 $ipV4 = Test-Connection -ComputerName (hostname) -Count 1  | Select -ExpandProperty IPV4Address 
 $ip=$ipV4.IPAddressToString
-$address ='\\192.168.150.1\share\datas\'+$ip+'UserInfo.txt'
+$address ='datas\'+$ip+'UserInfo.txt'
 
 
 #get data from os
